@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Lokasi Bangunan Pondok Pesantren Al-Munawwir"
+    />
+    <meta name="author" content="" />
+    <title>Lokasi Bangunan Pondok Pesantren Al-Munawwir</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.3.1/mapbox-gl-directions.css"
+      type="text/css"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      #map {
+        width: 200%;
+        height: 500px; /* Ensure the map container has a defined height */
+      }
+    </style>
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top"
+          >Pondok Pesantren Al-Munawwir</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pagecontent">Page Content</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <header class="masthead" id="home">
+      <div
+        class="container d-flex h-100 align-items-center justify-content-center"
+      >
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Lokasi Bangunan</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            Pondok Pesantren Al-Munawwir
+          </h2>
+          <a class="btn btn-primary" href="#about">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-white mb-4">Pondok Pesantren Al-Munawwir</h2>
+            <p class="text-white-50">
+              merupakan salah satu pesantren tertua dan paling terkenal di
+              Yogyakarta. Terletak di Desa Krapyak, pesantren ini menawarkan
+              lingkungan belajar yang kondusif dengan berbagai fasilitas modern.
+              Pesantren ini menggunakan kurikulum yang menggabungkan pendidikan
+              umum dan agama, serta menyediakan berbagai kegiatan
+              ekstrakurikuler seperti karate, basket, futsal, dan grup belajar.
+              <a href="https://almunawwir.com/">Klik di sini</a>
+              untuk mengunjungi website Pondok Pesantren Al-Munawwir.
+            </p>
+          </div>
+        </div>
+        <img class="img-fluid" src="assets/img/ponpes.jpg" alt="..." />
+      </div>
+    </section>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Left Side: Petunjuk -->
+        <div class="col-lg-3">
+          <div class="card mb-4" style="color: #146855">
+            <div class="card-header" style="font-weight: bold">Petunjuk</div>
+            <div class="card-body">
+              <p>
+                <span>
+                  1. Gunakan tombol zoom in
+                  <img src="assets/img/in.png" width="20px" />, zoom out
+                  <img src="assets/img/out.png" width="20px" />, dan reset
+                  bearing to north
+                  <img src="assets/img/bearing.png" width="20px" /> untuk
+                  mengatur posisi peta.
+                </span>
+              </p>
+              <p>
+                <span>
+                  2. Titik biru bertuliskan huruf "A" merupakan titik lokasi
+                  Anda.
+                </span>
+              </p>
+              <p>
+                <span>
+                  3. Klik tombol
+                  <img src="assets/img/lokasi.png" width="120px" /> untuk
+                  menampilkan lokasi Pondok Pesantren Al-Munawwir.
+                </span>
+              </p>
+              <p>
+                <span
+                  >4. Klik salah satu bangunan sebagai tujuan destinasi.</span
+                >
+              </p>
+              <p>
+                <span>5. Rute ditampilkan sebagai garis biru pada peta.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Map -->
+        <div class="col-lg-9">
+          <div class="card mb-4">
+            <div class="card">
+              <div class="card-body" style="height: 510px; position: relative">
+                <!-- Map container -->
+                <div id="map" style="width: 100%; height: 100%"></div>
+
+                <!-- Button and Legend positioned on the left side of the map -->
+                <div
+                  id="map-overlay"
+                  style="
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    z-index: 1000;
+                    color: white;
+                  "
+                >
+                  <!-- Lokasi Pesantren Button -->
+                  <button
+                    id="fly"
+                    class="btn"
+                    style="
+                      background-color: #ff3131;
+                      color: white;
+                      border: none;
+                      padding: 10px 20px;
+                      font-size: 14px;
+                      border-radius: 5px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    Lokasi Pesantren
+                  </button>
+
+                  <!-- Legend -->
+                  <div
+                    id="state-legend"
+                    class="legend"
+                    style="
+                      background-color: rgba(0, 0, 0, 0.6);
+                      padding: 10px;
+                      border-radius: 5px;
+                    "
+                  >
+                    <h7 style="font-weight: bold; color: white">Legenda</h7>
+                    <div style="color: white">
+                      <span
+                        style="
+                          background-color: #1e3d59;
+                          padding: 5px;
+                          border-radius: 3px;
+                        "
+                      ></span>
+                      Asrama Putra
+                    </div>
+                    <div style="color: white">
+                      <span
+                        style="
+                          background-color: #ff6e40;
+                          padding: 5px;
+                          border-radius: 3px;
+                        "
+                      ></span>
+                      Asrama Putri
+                    </div>
+                    <div style="color: white">
+                      <span
+                        style="
+                          background-color: #ffc13b;
+                          padding: 5px;
+                          border-radius: 3px;
+                        "
+                      ></span>
+                      Bangunan Umum
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoicHRybHVwaXRhIiwiYSI6ImNtNGV5eHVpNzEwMWYycXEwcWxsNmttdTIifQ.SS2iICYa3LWkN_0FR4zNyQ";
+
+      const start = {
+        center: [110.38353248498208, -7.805284666182359],
+        zoom: 12.35,
+        pitch: 0,
+        bearing: 0,
+      };
+
+      const end = {
+        center: [110.36155468257067, -7.82647285876894],
+        zoom: 17,
+        bearing: 0,
+        pitch: 0,
+      };
+
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v12", // style URL
+        center: [110.36155468257067, -7.82647285876894], // starting position [lng, lat]
+        zoom: 17, // starting zoom
+        ...start,
+      });
+
+      // Load Geojson Asrama Putra
+      map.on("load", () => {
+        map.addSource("asrama_putra", {
+          type: "geojson",
+          data: "assets/geojson/asramaputra.geojson",
+        });
+
+        map.addLayer({
+          id: "asrama_putra",
+          type: "fill",
+          source: "asrama_putra", // reference the data source
+          layout: {},
+          paint: {
+            "fill-color": "#1e3d59",
+            "fill-opacity": 1,
+          },
+        });
+
+        map.addLayer({
+          id: "outline_asramaputra",
+          type: "line",
+          source: "asrama_putra",
+          layout: {},
+          paint: {
+            "line-color": "black",
+            "line-width": 1,
+          },
+        });
+
+        // Load Geojson Asrama Putri
+        map.addSource("asrama_putri", {
+          type: "geojson",
+          data: "assets/geojson/asramaputri.geojson",
+        });
+
+        map.addLayer({
+          id: "asrama_putri",
+          type: "fill",
+          source: "asrama_putri", // reference the data source
+          layout: {},
+          paint: {
+            "fill-color": "#ff6e40",
+            "fill-opacity": 1,
+          },
+        });
+
+        map.addLayer({
+          id: "outline_asramaputri",
+          type: "line",
+          source: "asrama_putri",
+          layout: {},
+          paint: {
+            "line-color": "black",
+            "line-width": 1,
+          },
+        });
+
+        // Load Geojson Bangunan Umum
+        map.addSource("bangunan_umum", {
+          type: "geojson",
+          data: "assets/geojson/bangunanumum.geojson",
+        });
+
+        map.addLayer({
+          id: "bangunan_umum",
+          type: "fill",
+          source: "bangunan_umum", // reference the data source
+          layout: {},
+          paint: {
+            "fill-color": "#ffc13b",
+            "fill-opacity": 1,
+          },
+        });
+
+        map.addLayer({
+          id: "outline_bangunanumum",
+          type: "line",
+          source: "bangunan_umum",
+          layout: {},
+          paint: {
+            "line-color": "black",
+            "line-width": 1,
+          },
+        });
+
+        // Load Popup
+        const popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: true,
+        });
+
+        map.on("mouseenter", "asrama_putra", (e) => {
+          map.getCanvas().style.cursor = "pointer";
+          var feature = e.features[0];
+          popup.setLngLat(e.lngLat).setText(feature.properties.Nama).addTo(map);
+        });
+
+        map.on("mouseleave", "asrama_putra", function () {
+          map.getCanvas().style.cursor = "";
+          popup.remove();
+        });
+
+        map.on("mouseenter", "asrama_putri", (e) => {
+          map.getCanvas().style.cursor = "pointer";
+          var feature = e.features[0];
+          popup.setLngLat(e.lngLat).setText(feature.properties.Nama).addTo(map);
+        });
+
+        map.on("mouseleave", "asrama_putri", function () {
+          map.getCanvas().style.cursor = "";
+          popup.remove();
+        });
+
+        map.on("mouseenter", "bangunan_umum", (e) => {
+          map.getCanvas().style.cursor = "pointer";
+          var feature = e.features[0];
+          popup.setLngLat(e.lngLat).setText(feature.properties.Nama).addTo(map);
+        });
+
+        map.on("mouseleave", "bangunan_umum", function () {
+          map.getCanvas().style.cursor = "";
+          popup.remove();
+        });
+
+        map.addControl(new mapboxgl.NavigationControl(), "top-left");
+
+        var directions = new MapboxDirections({
+          accessToken: mapboxgl.accessToken,
+          unit: "metric", // Use the metric system to display distances.
+          profile: "mapbox/driving", // Set the initial profile to driving.
+          language: "id",
+        });
+
+        map.on("load", function () {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+              directions.setOrigin([
+                position.coords.longitude,
+                position.coords.latitude,
+              ]);
+            });
+          }
+        });
+
+        map.addControl(directions, "top-right");
+
+        let isAtStart = true;
+
+        document.getElementById("fly").addEventListener("click", () => {
+          const target = isAtStart ? end : start;
+          isAtStart = !isAtStart;
+
+          map.flyTo({
+            ...target, // Fly to the selected target
+            duration: 2000, // Animate over 2 seconds
+            essential: true, // This animation is considered essential with respect to prefers-reduced-motion
+          });
+        });
+      });
+    </script>
+
+    <!-- Contact -->
+    <section class="contact-section bg-black" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-md-4 mb-3">
+            <div class="card py-4 h-100 text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="text-black-50">
+                Jl. KH. Ali Maksum, Krapyak Kulon, Panggungharjo, Kec. Sewon,
+                Kabupaten Bantul, Daerah Istimewa Yogyakarta 55002
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card py-4 h-100 text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="text-black-50">
+                <a href="mailto:info@almunawwir.com">info@almunawwir.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card py-4 h-100 text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="text-black-50">+62 812-3456-7890</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container px-4 px-lg-5">
+        Copyright &copy; Assyifa Wirdya Kuswoyo_117210009
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
